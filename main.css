@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+.wrapper {
+  border: 2px solid darkslategrey;
+  padding: 5px;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center; 
+}
+h1 {
+  font-size: 3rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+  margin: 5px;
+  padding: 4px;
+  background-color: #ffc105;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  #dino {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 242px;
+    background-image: url('./images/dino-run-0.png');
+    background-size: 50px 50px;
+    left: 8%;
+  }
+  
+  .jump {
+    animation: jump 0.3s linear;
+    -webkit-animation: jump 0.3s linear;
+  }
+  
+  @keyframes jump{
+    0% {
+      top: 245px;
+    }
+    30% {
+      top: 160px;
+    }
+    50% {
+      top: 100px;
+    }
+    80% {
+      top:160px;
+    }
+    100% {
+      top: 245px;
+    }
+  }
+  
+  #cac {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 212px;
+    background-image: url('./images/cactus.png');
+    background-size: 30px 30px;
+    left: 78%;
+    animation: caci 1s infinite;
+    -webkit-animation: caci 1s infinite;
+  }
+  
+  @keyframes caci{
+    0% {
+      left: 80%;
+    }
+    100% {
+      left: -10px;
+    }
+  }
